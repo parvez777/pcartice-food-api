@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Serif Pro', serif;
+}
+ul{
+    list-style: none;
+    display: flex;
+    text-align: right;
+}
+li{
+    margin-left: 15px;
+    text-align: right;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    text-align: right;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    width: 100%;
+    height: 100px;
+    background: black;
+    align-items: center;
+}
+.logo-div{
+    flex-basis: 25%;
+}
+.search{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    flex-basis: 25%;
+}
+.logo{
+    color: crimson;
+    padding: 30px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.logo span{
+    color: white;
+    font-size: 50px;
+}
+
+#input{
+    width: 300px;
+    height: 20px;
+    /* padding: 5px 10px; */
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
+
+.bi{
+    font-size: 30px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+.srch{
+    display: inline-block;
+    background: white;
+    border-radius: 30px;
+    padding: 5px 15px;
+    align-items: center;
+}
+
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hero-section{
+    width: 100%;
+    height: 87vh;
+    background: linear-gradient(rgb(247, 174, 174), rgb(144, 241, 212) );
+}
+.hero-section h2{
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(20, 33, 220);
+    
+}
+.hero-section h3{
+    color: crimson;
+    font-weight: 700;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+.left-side{
+    flex-basis: 50%;
+    background: rgba(85, 84, 83, 0.329);
+    height: 500px;
+    box-shadow: 20px 0 20px 0 rgba(0, 0, 0, 0.5);
+    padding: 30px;
+
+}
+.right-side{
+    flex-basis: 50%;
+    background: rgba(85, 84, 83, 0.329);
+    height: 500px;
+    background-image: url(/images/food1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 20px 0 20px 0 rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-side button{
+    padding: 8px 30px;
+    background: rgba(41, 40, 40, 0.445);
+    color: crimson;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 25px;
+    border: 2px solid crimson;
+    transition: 0.1s;
+}
+.right-side button:hover{
+    background: black;
+}
+
+.left-side h1{
+    text-align: center;
+    color: rgb(11, 255, 214);
+    font-weight: 700;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+.container{
+    display: none;
+}
+
+.container h1{
+    text-align: center;
+    color: rgb(92, 92, 92);
+    padding: 30px 5px 10px 5px;
+}
+.all-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box{
+    width: 400px;
+    height: 550px;
+    /* border: 1px solid #555; */
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: 0.3s;
+}
+.box:hover{
+    transform: translateY(-10px);
+}
+.img{
+    max-width: 100%;
+    cursor: pointer;
+}
+.img img{
+    max-width: 100%;
+    min-height: 100px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.content h2{
+    color: #555;
+    padding: 15px 0;
+    font-size: 25px;
+}
+.content button{
+    width: 140px;
+    height: auto;
+    margin-left: 140px;
+    border: 1px solid crimson;
+    padding: 5px;
+    background-color: black;
+    color: crimson;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+/* >>>>>>>>>>>Media Quary Style<<<<<<<<<<<<< */
+
+@media only screen and (max-width: 600px){
+    .menu{
+        display: none;
+    }
+    nav{
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 150px;
+        background: black;
+        align-items: center;
+    }
+    .search{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+    .srch{
+        display: inline-block;
+        background: white;
+        border-radius: 30px;
+        /* padding: 5px 15px; */
+        align-items: center;
+    }
+    #input{
+        width: 240px;
+        height: 20px;
+        /* padding: 5px 10px; */
+        outline: none;
+        border: none;
+        font-size: 20px;
+    }
+    li{
+        font-size: 15px;
+        margin-left: 10px;
+        text-align: right;
+    }
+    .box{
+        width: 400px;
+        height: 460px;
+        /* border: 1px solid #555; */
+        border-radius: 20px;
+        margin: 15px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        transition: 0.3s;
+}
+.content button{
+    width: 120px;
+    height: auto;
+    margin-left: 87px;
+    border: 1px solid crimson;
+    padding: 5px;
+    background-color: black;
+    color: crimson;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+/* >>>>>>>>>>>> Hero Section <<<<<<<<<<<<<<< */
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hero-section{
+    width: 100%;
+    /* height: 87vh; */
+    background: linear-gradient(rgb(247, 174, 174), rgb(144, 241, 212) );
+}
+.hero-section h2{
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(20, 33, 220);
+    
+}
+.hero-section h3{
+    color: crimson;
+    font-weight: 700;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+.left-side{
+    flex-basis: 100%;
+    background: rgba(85, 84, 83, 0.329);
+    height: 500px;
+    box-shadow: 20px 0 20px 0 rgba(0, 0, 0, 0.5);
+    padding: 30px;
+
+}
+.right-side{
+    flex-basis: 100%;
+    background: rgba(85, 84, 83, 0.329);
+    height: 500px;
+    background-image: url(/images/food1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 20px 0 20px 0 rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-side h1{
+    text-align: center;
+    color: rgb(11, 255, 214);
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+/* >>>>>>>>>>Details Section <<<<<<<<<<<<<< */
+.left{
+    flex-basis: 100%;
+    background: rgba(85, 84, 83, 0.329);
+    height: 400px;
+    box-shadow: 20px 0 20px 0 rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.right{
+    flex-basis: 100%;
+    background: rgba(85, 84, 83, 0.329);
+    height: 400px;
+    box-shadow: 20px 0 20px 0 rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+
+/* >>>>>>>>>>>>> Food Details Page <<<<<<<<<<<<<<< */
+
+.foodDetails-section{
+    width: 100%;
+    height: 87vh;
+    background: linear-gradient(rgb(144, 241, 212), rgb(247, 174, 174));
+    display: none;
+}
+.foodDetails-section h2{
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 60px;
+    font-weight: bold;
+    color: crimson;
+    
+}
+.left{
+    flex-basis: 50%;
+    background: rgba(85, 84, 83, 0.329);
+    height: 500px;
+    box-shadow: 20px 0 20px 0 rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.right{
+    flex-basis: 50%;
+    background: rgba(85, 84, 83, 0.329);
+    height: 500px;
+    box-shadow: 20px 0 20px 0 rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right img{
+    width: 100%;
+    height: 100%;
+}
+
+.left h1{
+    text-align: center;
+    color: rgb(253, 92, 92);
+    font-weight: 700;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+.left h3{
+    color: green;
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.foodDetails-section span{
+    color: blue;
+    padding: 0px 10px;
+}
+.left button{
+    padding: 5px 15px;
+    background: rgba(41, 40, 40, 0.445);
+    color: crimson;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid crimson;
+    transition: 0.1s;
+}
+.left button:hover{
+    background: black;
+}
