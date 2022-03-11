@@ -112,7 +112,7 @@ nav{
     flex-basis: 50%;
     background: rgba(85, 84, 83, 0.329);
     height: 500px;
-    background-image: url(/images/food1.jpg);
+    background-image: url(food1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
